@@ -1,0 +1,255 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root{
+  --mainBackground: hsl(236, 33%, 92%);
+  --itemsBackground: hsl(0, 0%, 98%);
+  --border: hsl(236, 33%, 92%);
+  --firstFont: hsl(236, 33%, 92%);
+  --secondFont: hsl(236, 9%, 61%);
+  --thirdFont: hsl(235, 19%, 35%);
+  --fourthFont: hsl(233, 11%, 84%);
+  /* --mobileBg: url('images/bg-mobile-light.jpg');
+  --desktopBg: url("images/bg-desktop-light.jpg"); */
+}
+
+*{
+  font-family: "Josefin Sans", "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--mainBackground);
+  color: var(--firstFont);
+}
+
+header{
+  background: url('images/bg-mobile-light.jpg') no-repeat;
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+header.dark{
+  background: url('images/bg-mobile-dark.jpg') no-repeat;
+}
+
+h1{
+  letter-spacing: 0.5rem;
+  margin: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.new{
+  margin: 0 5% 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.new,
+main,
+.filter{
+  background: var(--itemsBackground);
+  border-radius: 0.5em;
+  max-width: 692px;
+}
+
+.circle{
+  border: thin var(--border) solid;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.text{
+  flex: 1.5;
+  padding: 0 5%;
+  background: transparent;
+  border: none;
+  color: var(--secondFont)
+}
+
+.add{
+  transform: rotate(45deg);
+}
+
+.app-theme:hover,
+.add:hover,
+.text:hover,
+.delete,
+input:hover,
+.clear:hover,
+.filter > span:hover{
+  cursor: pointer;
+}
+
+.list > span:hover{
+  cursor: grab;
+}
+
+.text:focus-visible{
+  outline: none;
+}
+
+main{
+  margin: 0 5%;
+  padding: 1em 0;
+}
+
+.last-row{
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items{
+  font-size: 0.9em;
+}
+
+.clear{
+  background: transparent;
+  border: none;
+  line-height: 1em;
+}
+
+.items,
+.clear{
+  color: var(--secondFont)
+}
+
+main div:nth-child(n+2){
+  padding-top: 1em;
+}
+
+.list{
+  color: var(--thirdFont);
+  border-bottom: thin var(--border) solid;
+  padding: 0 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span.task{
+  flex: 1.5;
+  padding: 0 5%;
+}
+.complete{
+  background: center left 50% url("./images/icon-check.svg") no-repeat,
+  linear-gradient(#57ddff, #c058f3);
+}
+
+.strikethrough{
+  text-decoration: line-through;
+  color: var(--fourthFont);
+}
+
+.filter{
+  margin: 1em 5%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filter > span{
+  font-weight: 700;
+  color: var(--secondFont)
+}
+
+.filter > .current{
+  color: hsl(220, 98%, 61%);
+}
+
+p{
+  color: var(--secondFont);
+  font-size: 0.9rem;
+  margin-top: 3em;
+  display: block;
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 1rem;
+  color: var(--secondFont);
+  font-size: 10px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+*{
+  transition: all 0.3s ease-out;
+}
+
+header{
+  transition: background 0.1s linear;
+}
+
+.filter.inside{
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  padding-top: 0;
+}
+
+
+@media screen and (min-width: 375px) {
+h1{
+  margin: 4rem 5%;
+}
+
+  header{
+      background: url("images/bg-desktop-light.jpg") no-repeat;
+      background-size: cover;
+      height: 300px;
+  }  
+
+  header.dark{
+    background: url("images/bg-desktop-dark.jpg") no-repeat;
+    background-size: cover;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* *{
+    font-size: 20px;
+  } */
+
+  h1{
+    max-height: 188px;
+    max-width: 692px;
+    margin: 4rem auto;
+  }
+  
+  .new,
+  main,
+  .filter{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+}
