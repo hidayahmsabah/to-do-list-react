@@ -32,12 +32,12 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop Layout
-![Light Theme for Desktop Layout](images/light-desktop.png?raw=true "Light Theme")
+![Light Theme for Desktop Layout](images/light-desktop.PNG?raw=true "Light Theme")
 ![Dark Theme for Desktop Layout](images/dark-desktop.PNG?raw=true "Dark Theme")
 
 #### Mobile Layout
-![Light Theme for Mobile Layout](images/light-mobile.png?raw=true "Light Theme - Mobile Version")
-![Dark Theme for Mobile Layout](images/dark-mobile.png?raw=true "Dark Theme - Mobile Version")
+![Light Theme for Mobile Layout](images/light-mobile.PNG?raw=true "Light Theme - Mobile Version")
+![Dark Theme for Mobile Layout](images/dark-mobile.PNG?raw=true "Dark Theme - Mobile Version")
 
 ### Links
 
