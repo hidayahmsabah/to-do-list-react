@@ -33,7 +33,7 @@ Users should be able to:
 
 #### Desktop Layout
 ![Light Theme for Desktop Layout](images/light-desktop.png?raw=true "Light Theme")
-![Dark Theme for Desktop Layout](images/dark-desktop.png?raw=true "Dark Theme")
+![Dark Theme for Desktop Layout](images/dark-desktop.PNG?raw=true "Dark Theme")
 
 #### Mobile Layout
 ![Light Theme for Mobile Layout](images/light-mobile.png?raw=true "Light Theme - Mobile Version")
